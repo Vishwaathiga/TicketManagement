@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace TicketManagement.Models;
 
-namespace CUSTOMER_COMPLAINT_AND_TICKET_MANAGEMENT_SYSTEM.Models
+public class TicketUpdate
 {
-    internal class TicketUpdate
-    {
-    }
+    public int UpdateId { get; set; }
+    public int TicketId { get; set; }
+    public string UpdatedBy { get; set; } = string.Empty;
+    public string Message { get; set; } = string.Empty;
+    public string? OldStatus { get; set; }
+    public string? NewStatus { get; set; }
+    public DateTime CreatedAt { get; set; }
 }
