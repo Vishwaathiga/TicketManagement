@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace TicketManagement.Models;
 
-namespace CUSTOMER_COMPLAINT_AND_TICKET_MANAGEMENT_SYSTEM.Models
+public class SupportAgent
 {
-    internal class SupportAgent
-    {
-    }
+    public int AgentId { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Department { get; set; } = string.Empty;
+    public bool IsActive { get; set; }
 }
