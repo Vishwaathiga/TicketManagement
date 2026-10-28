@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace TicketManagement.Models;
 
-namespace CUSTOMER_COMPLAINT_AND_TICKET_MANAGEMENT_SYSTEM.Models
+public class Category
 {
-    internal class Category
-    {
-    }
+    public int CategoryId { get; set; }
+    public string CategoryName { get; set; } = string.Empty;
+    public string? Description { get; set; }
+    public bool IsActive { get; set; }
 }
